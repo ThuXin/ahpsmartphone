@@ -102,7 +102,7 @@ table.dataTable thead tr {
 			<table cellspacing="0" cellpadding="0">
 
 				<%
-					int price_count = 0, ram_count = 0, storage_count = 0, camera_count = 0, battery_count = 0;
+				int price_count = 0, ram_count = 0, storage_count = 0, camera_count = 0, battery_count = 0;
 					String dataPoints = null;
 					String dataPoints1 = null;
 					Gson gsonObj = new Gson();
@@ -179,7 +179,7 @@ table.dataTable thead tr {
 				%>
 
 				<%
-					}
+				}
 					int max_label = 0;
 
 					max_value = ahp.getWeights()[0];
@@ -235,7 +235,7 @@ table.dataTable thead tr {
 			</thead>
 			<tbody>
 				<%
-					Connection con;
+				Connection con;
 					ResultSet rs;
 
 					int price = 0;
@@ -314,7 +314,7 @@ table.dataTable thead tr {
 				</tr>
 
 				<%
-					}
+				}
 
 					} catch (SQLException e) {
 						e.printStackTrace();
