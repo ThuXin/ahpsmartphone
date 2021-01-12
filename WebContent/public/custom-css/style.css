@@ -1,0 +1,143 @@
+@import 'navbar.css';
+
+* {
+	list-style: none;
+	font-size: 100%;
+	color: black;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+.navbar-brand {
+	font-family: 'Piedra', cursive;
+}
+
+summary:hover {
+	color: rgb(204, 45, 45);
+	border: 1px solid white;
+}
+
+input[type="submit"]:hover {
+	transform: scale(1.1, 1.1);
+	transition: transform 0.1s linear;
+	cursor: pointer;
+}
+
+input[type="radio"] {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	top: 30px;
+	left: -5px;
+}
+
+.s-txt {
+	text-shadow: 5px 7px 15px #050505;
+}
+
+.footer {
+	width: 100%;
+	height: auto;
+	position: relative;
+	bottom: 0;
+	border-top: 2px dashed #091625;
+}
+
+/* div span i {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+li a i , div span i {
+    color: #091625;
+} */
+@media only screen and (max-width: 576px) {
+	* {
+		font-size: 0.95rem;
+	}
+	;
+}
+
+.circle {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 2px solid rgb(153, 153, 153);
+	padding: 8px 0;
+	text-align-last: center;
+}
+
+input[type="radio"] {
+	display: none;
+	
+}
+
+input[type="radio"]:checked ~div.circle {
+	background-color:2px solid #091625;
+	
+	
+}
+
+.carousel, .slide {
+	width: 90vw;
+	height: 400px;
+	margin: 0 auto;
+	outline: 2px dashed #091625;
+}
+
+.carousel-item>img {
+	width: 600px;
+	height: 400px;
+}
+
+button>a:hover {
+	text-decoration: none;
+}
+
+.table-bordered {
+	box-shadow: 6px 6px 8px rgba(3, 3, 3, 0.103), -6px -6px 8px
+		rgba(247, 247, 247, 0.432);
+}
+
+.bg-img-aboutUs {
+	background: url('../img/svg/undraw_nature_m5ll.svg') no-repeat center;
+	background-size: contain;
+	max-width: 100%;
+	height: 600px;
+}
+
+#overlap-pos-elem {
+	position: absolute;
+	top: 35%;
+	width: 70%;
+	height: auto;
+	box-shadow: -4px -4px 15px #fff, 4px 4px 15px #050505;
+	padding: 10px;
+	margin: 0 15%;
+	font-weight: 700;
+}
+
+#overlap-pos-elem>article>p {
+	font-size: 0.8rem;
+	word-spacing: 0.1rem;
+	word-wrap: wrap;
+}
+
+@media ( max-width : 992px) {
+	.carousel-item>img {
+		margin: 50px 0;
+		width: 300px;
+		height: 250px;
+	}
+	div img.d-block {
+		width: 100%;
+		height: auto;
+	}
+	.bg-img-aboutUs {
+		display: none;
+	}
+	#overlap-pos-elem {
+		position: unset;
+		margin-bottom: 15px;
+	}
+}
